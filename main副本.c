@@ -10,15 +10,18 @@
 #include <math.h>
 int main()
 {
- long double n=0.0,PI,temp;
+ long double n=0.0,temp,Pi;
     int i;
     
-    for (i=1; i<=1e6; i++)
+    for (i=1; i<=10000; i++)
     {
         temp=1.0/(i*i);
         n+=temp;
     }
-    (PI*PI)/6.0==n;
-    printf("PI=%.6Lf\n",PI);
+    Pi=sqrt(n*6);
+    printf("n=%Lf\n",n);
+    printf("Pi=%Lf\n",Pi);
+    return 0;
     
+
 }
